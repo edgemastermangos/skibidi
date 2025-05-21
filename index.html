@@ -1,0 +1,175 @@
+<!--Name:Tora Anthony Schoen
+
+Course:PTEC grade 9 
+
+Teacher:Mrs Hoitink
+
+School:Pembina Trails colliegiate
+
+Date Last Modified:5/20/2025 6:58PM
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Naawi-Oodena Home</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="EXTERNAL.css" />
+    <style>
+        /* Flex container for slideshow to center images nicely */
+        .slideshow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            max-width: 960px;
+            height: 500px;
+            margin: 2em auto;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 2px solid var(--forest-green);
+        }
+
+        /* Slide images - position absolute for fading */
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            opacity: 0;
+            animation: fade 10s infinite;
+        }
+
+        /* Animation delay for the first slide */
+        .slide1 { animation-delay: 0s; }
+
+        /* Animation delay for the second slide */
+        .slide2 { animation-delay: 5s; }
+
+        /* Keyframes for fade animation */
+        @keyframes fade {
+            0%, 45% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+
+        /* Center the welcome message */
+        #A {
+            text-align: center;
+            color: var(--forest-green);
+            font-family: var(--font-sans);
+            font-size: 3rem;
+            margin-top: 1em;
+        }
+
+        /* Center subtext below heading */
+        p.lead {
+            text-align: center;
+            font-style: italic;
+            font-weight: 500;
+            margin-bottom: 2em;
+            font-size: 1.25rem;
+        }
+
+        /* Style for the purpose container */
+        .purpose {
+            max-width: 900px;
+            margin: 0 auto 3em;
+            background: var(--glowing-teal);
+            border-radius: 10px;
+            padding: 1.5em 2em;
+            color: white;
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            box-sizing: border-box;
+        }
+
+        /* Footer styling inline override for layout */
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--forest-green);
+            color: var(--soft-sand);
+            padding: 1em;
+            font-size: 0.9rem;
+            gap: 1em;
+        }
+
+        /* Footer logo styling */
+        footer img {
+            max-width: 250px;
+            height: auto;
+            border: none;
+        }
+                header img {
+            max-width: 150px;
+            height: auto;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+     <header>
+    <nav>
+        <ul>
+            <!-- Navigation links -->
+            <li><img src="T1N-Logo-1536x429.png" alt="Naawi-Oodena Logo" /></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About-us.html">INFO</a></li>
+            <li><a href="The-ppl-involved.html">CONTACT US</a></li>
+            <!-- Centered navigation title -->
+            <li><p style="text-align: center;">NAAWI-OODENA HOME PAGE</p></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <!-- Main heading -->
+        <h1 id="A">Welcome to Naawi-Oodena!</h1>
+
+        <!-- Subtitle -->
+        <p class="lead">Naawi-Oodena: Where the Heart of the Land Beats Strong.</p>
+
+        <!-- Slideshow container with flexbox centering -->
+        <div class="slideshow" aria-label="Slideshow of Naawi-Oodena images">
+            <!-- First slide -->
+            <img src="kapyong.jpg" alt="Present view of Naawi-Oodena site" class="slide slide1" />
+            <!-- Second slide -->
+            <img src="naawi_future.png" alt="Future vision of Naawi-Oodena" class="slide slide2" />
+        </div>
+
+        <!-- Source citation -->
+        <p style="text-align:center; font-size: 0.9rem;">
+            (Sources: 
+            <a href="https://www.clc-sic.ca/real-estate/naawi-oodena" target="_blank" rel="noopener noreferrer">
+                https://www.clc-sic.ca/real-estate/naawi-oodena
+            </a>)
+        </p>
+
+        <!-- Purpose section -->
+        <section class="purpose" aria-labelledby="purpose-title">
+            <!-- Purpose section heading -->
+            <h2 id="purpose-title">What's The Purpose of Naawi-Oodena?</h2>
+            <!-- Purpose description -->
+            <p>
+                Naawi-Oodena is a place in the heart of Winnipeg for everyone to live, displaying art in green areas. Once a chaotic military base used for war, it is now a place to house people in need, promoting peace and kindness.
+            </p>
+        </section>
+    </main>
+    <p>SORCES</p>
+    <p><a href="https://treaty1.ca/naawi-oodena/">https://treaty1.ca/naawi-oodena/</a></p>
+    <p><a href="https://www.niedb-cndea.ca/wp-content/uploads/2024/11/SUCCESS-STORY_Naawi-Oodena.pdf">https://www.niedb-cndea.ca/wp-content/uploads/2024/11/SUCCESS-STORY_Naawi-Oodena.pdf</a></p>
+    <p><a href="https://www.clc-sic.ca/real-estate/naawi-oodena">https://www.clc-sic.ca/real-estate/naawi-oodena</a></p>
+
+
+    <!-- Footer with logo -->
+    <footer>
+        <!-- Footer text -->
+        <p>Naawi-Oodena ownership until 2040</p>
+        <!-- Footer logo -->
+        <img src="T1N-Logo-1536x429.png" alt="Naawi-Oodena Logo" />
+    </footer>
+</body>
+</html>

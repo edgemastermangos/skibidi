@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - Naawi-Oodena</title>
+    <link rel="stylesheet" href="EXTERNAL.css" />
+    <style>
+        /* Contact form styles (you can keep these inline or move to EXTERNAL.css) */
+
+        /* Center form container with flexbox */
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 2em 1em;
+        }
+
+        form {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border: 2px solid var(--forest-green);
+            border-radius: 10px;
+            background-color: var(--soft-sand);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: var(--forest-green);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 2px solid var(--forest-green);
+            background-color: #fff;
+            color: var(--earth-brown);
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: var(--glowing-teal);
+            color: var(--soft-sand);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover,
+        button:focus {
+            background-color: var(--forest-green);
+            outline: none;
+        }
+
+        #h2contact {
+            color: var(--forest-green);
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1em;
+            font-family: var(--font-sans);
+        }
+                /* Footer logo styling */
+        footer img {
+            max-width: 250px;
+            height: auto;
+            border: none;
+        }
+                
+                header img {
+            max-width: 150px;
+            height: auto;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><img src="T1N-Logo-1536x429.png" alt="Naawi-Oodena Logo" /></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About-us.html">INFO</a></li>
+            <li><a href="The-ppl-involved.html">CONTACT US</a></li>
+            <li><p style="text-align: center;">CONTACT US</p></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- Main content wrapper -->
+    <main>
+        <form>
+            <h2 id="h2contact">Contact Us</h2>
+
+            <!-- Full Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <!-- Email Address -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10}"
+                maxlength="17"
+                required
+                aria-describedby="phoneHelp"
+            />
+            <small id="phoneHelp" style="color: var(--forest-green); font-size: 0.85rem;">
+                Enter 10-17-digit phone number, numbers only.
+            </small>
+
+            <!-- Message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        Naawi-Oodena owns owner ship until 2040
+        <img src="T1N-Logo-1536x429.png" alt="Naawi-Oodena Logo" />
+    </footer>
+</body>
+</html>
+wb
